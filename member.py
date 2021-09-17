@@ -17,18 +17,18 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("** I am member Tagger **, I can Tag almost all members in group or channel 🤓\nClick **/help** for more infomation.\n\n Here is my [Developer👨‍💻](https://t.me/XD_PERSON)",
+  await event.reply("** I am Mentione Bot **, I can Tag almost all members in group or channel 🤓\nClick **/help** for more infomation.\n\n Here is my [Developer👨‍💻](https://t.me/kidhub)",
                     buttons=(
-                      [Button.url('📣 UPDATE CHANNEL', 'https://t.me/MEMBERTAGGERUPDATES')]
+                      [Button.url('🌈 UPDATE CHANNEL', 'https://t.me/kidbots')]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Hey 🤓 I Am Member Tagger \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
+  helptext = "**Hey 👽 I Am Mentione Bot \n\n You can Tag members by using Commands shown below,\n\n /all text \n\n @all text \n\n #all text**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('📣 UPDATE CHANNEL', 'https://t.me/MEMBERTAGGERUPDATES')]
+                      [Button.url('🌈 UPDATE CHANNEL', 'https://t.me/kidbots')]
                     ),
                     link_preview=False
                    )
@@ -81,5 +81,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
         
-print("🤓 BOT STARTED BY TANAJI 🤓")
+print("👽 BOT STARTED BY KID 👽")
 client.run_until_disconnected()
